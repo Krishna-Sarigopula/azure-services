@@ -1,0 +1,46 @@
+﻿@page
+@model FirstWebApp.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">
+        Create New
+        @(Model.IsFeatureEnable ? "Feature Flag enabled" : "Feature Flag disbled")
+    </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products[0].Quantity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Products)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.ProductID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.ProductID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.ProductID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

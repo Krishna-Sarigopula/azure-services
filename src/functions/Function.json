@@ -1,0 +1,20 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-4.1.1",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "methods": [
+        "get",
+        "post"
+      ],
+      "authLevel": "anonymous",
+      "name": "req",
+      "key1": "Keyvalue"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/functions.dll",
+  "entryPoint": "functions.HttpTriggerFunc.Run",
+  
+}
