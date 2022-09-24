@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "order",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "%input_queue_name%",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}

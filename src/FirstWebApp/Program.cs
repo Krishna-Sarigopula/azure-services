@@ -23,7 +23,7 @@ internal class Program
 
         builder.Services.AddDbContextPool<AppDbContext>(
             x => x.UseSqlServer(connectionString));
-        builder.Services.AddFeatureManagement(); //feature settings from azure
+        builder.Services.AddFeatureManagement(); //feature settings from azure coming from azure app configuration service
 
         var app = builder.Build();
 

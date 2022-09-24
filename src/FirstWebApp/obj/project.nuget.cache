@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KsKBDp+UESMN7PQ3uwrGpobKomoabANVef254iNt2X52epvt5Nn8LSQ3mQV5zQoxN+HajdX9tKz3r3yCLqDVYA==",
+  "dgSpecHash": "a/e0WYoxBypk4tVRGx+4OfvmFFOpAvyF8Cyawrjt/ugPvW0PCPUCqQC34XMHV/NS/uCtcnxuylip8dEkN2oDBA==",
   "success": true,
-  "projectFilePath": "K:\\azure-apps\\src\\FirstWebApp\\FirstWebApp.csproj",
+  "projectFilePath": "K:\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kittu\\.nuget\\packages\\azure.core\\1.20.0\\azure.core.1.20.0.nupkg.sha512",
     "C:\\Users\\kittu\\.nuget\\packages\\azure.data.appconfiguration\\1.2.0\\azure.data.appconfiguration.1.2.0.nupkg.sha512",

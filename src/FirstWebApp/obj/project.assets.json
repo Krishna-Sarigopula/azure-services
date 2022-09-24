@@ -10263,11 +10263,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "K:\\azure-apps\\src\\FirstWebApp\\FirstWebApp.csproj",
+      "projectUniqueName": "K:\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj",
       "projectName": "FirstWebApp",
-      "projectPath": "K:\\azure-apps\\src\\FirstWebApp\\FirstWebApp.csproj",
+      "projectPath": "K:\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj",
       "packagesPath": "C:\\Users\\kittu\\.nuget\\packages\\",
-      "outputPath": "K:\\azure-apps\\src\\FirstWebApp\\obj\\",
+      "outputPath": "K:\\azure-services\\src\\FirstWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kittu\\AppData\\Roaming\\NuGet\\NuGet.Config",

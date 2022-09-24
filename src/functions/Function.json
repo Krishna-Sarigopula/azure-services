@@ -11,6 +11,13 @@
       "authLevel": "anonymous",
       "name": "req",
       "key1": "Keyvalue"
+    },
+    {
+      "name": "order",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "outqueue",
+      "connection": "AzureWebJobsStorage"
     }
   ],
   "disabled": false,

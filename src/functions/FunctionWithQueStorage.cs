@@ -7,16 +7,16 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Microsoft.Extensions.Configuration;
 
 namespace functions
 {
-    public static class HttpTriggerFunc
+    public static class FunctionWithQueStorage
     {
-        [FunctionName("HttpTriggerFunc")]
+        [FunctionName("FunctionWithQueStorage")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
-            ILogger log, ExecutionContext context)
+             [Queue("outqueue"), StorageAccount("AzureWebJobsStorage")] ICollector<string> msg,  //AzureWebJobsStorage value is coming from local.settings.json file
+            ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
@@ -26,12 +26,14 @@ namespace functions
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             name = name ?? data?.name;
 
-            // getting this key1 value from appsettings inside of azure function apps. in local it comes from local.settings.json file values section
-            var val = Environment.GetEnvironmentVariable("key1", EnvironmentVariableTarget.Process);
+            if (name is not null)
+            {
+                msg.Add(name); // adding to queue 
+            }
 
             string responseMessage = string.IsNullOrEmpty(name)
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"Hello, {name}. Enviornment {val}.";
+                : $"Hello, {name}. This HTTP triggered function executed successfully.";
 
             return new OkObjectResult(responseMessage);
         }
