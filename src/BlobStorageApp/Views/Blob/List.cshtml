@@ -1,0 +1,13 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+@foreach (var item in Model)
+{
+    <a asp-action="Files" asp-route-name ="@item">@item</a> <br />
+}
+
