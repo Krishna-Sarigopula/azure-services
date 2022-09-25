@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "functions", "functions\func
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstWebApp", "FirstWebApp\FirstWebApp.csproj", "{27B4503D-580F-4428-B9D4-7134BC640538}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionsWithBindings", "FunctionsWithBindings\FunctionsWithBindings.csproj", "{4C6B1B16-0605-4251-AE0D-6BD1738B970D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionsWithBindings", "FunctionsWithBindings\FunctionsWithBindings.csproj", "{4C6B1B16-0605-4251-AE0D-6BD1738B970D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
