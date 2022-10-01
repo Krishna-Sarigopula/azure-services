@@ -1,4 +1,5 @@
 using FirstWebApp.Data;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.FeatureManagement;
 internal class Program
@@ -25,6 +26,9 @@ internal class Program
             x => x.UseSqlServer(connectionString));
         builder.Services.AddFeatureManagement(); //feature settings from azure coming from azure app configuration service
 
+        builder.Services.AddAzureAppConfiguration();
+        builder.Services.AddApplicationInsightsTelemetry("817ea276-b458-443d-b3ba-b249703d4404");
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -35,8 +39,20 @@ internal class Program
             app.UseHsts();
         }
 
-        app.UseHttpsRedirection();
+       // app.UseHttpsRedirection();
         app.UseStaticFiles();
+
+        app.UseExceptionHandler(error =>
+        {
+            error.Run(async context =>
+            {
+                var errorFeature = context.Features.Get<IExceptionHandlerFeature>();
+                var exception = errorFeature.Error;
+                await Task.FromResult(true);
+                // log the exception etc..
+                // produce some response for the caller
+            });
+        });
 
         app.UseRouting();
 
