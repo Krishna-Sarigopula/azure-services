@@ -6,6 +6,7 @@ using Azure.Storage;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 using Azure.Storage.Blobs.Specialized;
+using System.Reflection.Metadata;
 
 namespace BlobStorageApp.Services
 {
@@ -19,15 +20,19 @@ namespace BlobStorageApp.Services
 
         public bool UploadFile(IFormFile formFile, string containerName, string fileName)
         {
-            
-           
-
-            
             var containerClient = blobServiceClient.GetBlobContainerClient(containerName);
             var metadata = new Dictionary<string, string>();
             metadata.Add("Version", "Version");
 
-            containerClient.CreateIfNotExists(PublicAccessType.None, metadata);
+            var tags = new Dictionary<string, string>()
+                                     {
+                                        { "Sealed", "false" },
+                                        { "Content", "image" },
+                                        { "Date", "2020-04-20" }
+                                     };
+
+            containerClient.CreateIfNotExists(PublicAccessType.None, metadata); // setting metadata
+            containerClient.GetBlobClient(fileName).SetTags(tags); //setting tags
             BlobContentInfo blob = containerClient.UploadBlob(fileName, formFile.OpenReadStream());
 
             return blob.VersionId is not null;
@@ -42,6 +47,7 @@ namespace BlobStorageApp.Services
         public IEnumerable<String> GetBlobItems(string containerName)
         {
             var containerClient = blobServiceClient.GetBlobContainerClient(containerName);
+            //containerClient.FindBlobsByTags() find by tags
             return containerClient.GetBlobs().Select(x => x.Name);
         }
     }
