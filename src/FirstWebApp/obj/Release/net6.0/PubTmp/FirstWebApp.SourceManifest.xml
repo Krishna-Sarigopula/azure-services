@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="K:\azure-apps\src\FirstWebApp\obj\Release\net6.0\PubTmp\Out\" />
+  <IisApp path="K:\azure-services\src\FirstWebApp\obj\Release\net6.0\PubTmp\Out\" />
 </sitemanifest>

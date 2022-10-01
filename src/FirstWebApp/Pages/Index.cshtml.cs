@@ -29,7 +29,7 @@ namespace FirstWebApp.Pages
                 lname = "Sarigopula"
             };
 
-            _logger.LogInformation("request info: {0}", req);
+            _logger.LogWarning("request info: {0}", req);
         }
     }
 }
