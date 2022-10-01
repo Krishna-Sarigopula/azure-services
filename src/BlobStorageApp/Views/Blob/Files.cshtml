@@ -9,6 +9,6 @@
 @foreach (var item in Model)
 {
     <p>@item</p>
-    <a asp-action="FileInfo" asp-route-name="@item">@item</a>
+    <a asp-action="FileInfo" asp-route-filename="@item">@item</a>
     <br />
 }

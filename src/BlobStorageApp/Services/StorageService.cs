@@ -1,5 +1,11 @@
-﻿using Azure.Storage.Blobs;
+﻿using Azure.Core.Cryptography;
+using Azure.Identity;
+using Azure.Security.KeyVault.Keys;
+using Azure.Security.KeyVault.Keys.Cryptography;
+using Azure.Storage;
+using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
+using Azure.Storage.Blobs.Specialized;
 
 namespace BlobStorageApp.Services
 {
@@ -13,9 +19,14 @@ namespace BlobStorageApp.Services
 
         public bool UploadFile(IFormFile formFile, string containerName, string fileName)
         {
+            
+           
+
+            
             var containerClient = blobServiceClient.GetBlobContainerClient(containerName);
             var metadata = new Dictionary<string, string>();
             metadata.Add("Version", "Version");
+
             containerClient.CreateIfNotExists(PublicAccessType.None, metadata);
             BlobContentInfo blob = containerClient.UploadBlob(fileName, formFile.OpenReadStream());
 
