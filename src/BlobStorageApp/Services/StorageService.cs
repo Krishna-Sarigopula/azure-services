@@ -33,6 +33,7 @@ namespace BlobStorageApp.Services
 
             containerClient.CreateIfNotExists(PublicAccessType.None, metadata); // setting metadata
             containerClient.GetBlobClient(fileName).SetTags(tags); //setting tags
+
             BlobContentInfo blob = containerClient.UploadBlob(fileName, formFile.OpenReadStream());
 
             return blob.VersionId is not null;
