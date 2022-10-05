@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "K:\\azure-services\\src\\QueueStorage\\QueueStorage.csproj": {}
+    "C:\\krishna\\azure-services\\src\\QueueStorage\\QueueStorage.csproj": {}
   },
   "projects": {
-    "K:\\azure-services\\src\\QueueStorage\\QueueStorage.csproj": {
+    "C:\\krishna\\azure-services\\src\\QueueStorage\\QueueStorage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\azure-services\\src\\QueueStorage\\QueueStorage.csproj",
+        "projectUniqueName": "C:\\krishna\\azure-services\\src\\QueueStorage\\QueueStorage.csproj",
         "projectName": "QueueStorage",
-        "projectPath": "K:\\azure-services\\src\\QueueStorage\\QueueStorage.csproj",
-        "packagesPath": "C:\\Users\\kittu\\.nuget\\packages\\",
-        "outputPath": "K:\\azure-services\\src\\QueueStorage\\obj\\",
+        "projectPath": "C:\\krishna\\azure-services\\src\\QueueStorage\\QueueStorage.csproj",
+        "packagesPath": "C:\\Users\\krishna.sarigopula\\.nuget\\packages\\",
+        "outputPath": "C:\\krishna\\azure-services\\src\\QueueStorage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kittu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\krishna.sarigopula\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,29 +39,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Azure.Storage.Queues": {
-              "target": "Package",
-              "version": "[12.11.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
         }
       }
     }

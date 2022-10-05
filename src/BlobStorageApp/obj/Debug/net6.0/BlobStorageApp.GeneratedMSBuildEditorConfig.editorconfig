@@ -8,49 +8,49 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlobStorageApp
 build_property.RootNamespace = BlobStorageApp
-build_property.ProjectDir = K:\azure-services\src\BlobStorageApp\
+build_property.ProjectDir = c:\krishna\azure-services\src\BlobStorageApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = K:\azure-services\src\BlobStorageApp
+build_property.MSBuildProjectDirectory = c:\krishna\azure-services\src\BlobStorageApp
 build_property._RazorSourceGeneratorDebug = 
 
-[K:/azure-services/src/BlobStorageApp/Views/Blob/Files.cshtml]
+[c:/krishna/azure-services/src/BlobStorageApp/Views/Blob/Files.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvYlxGaWxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[K:/azure-services/src/BlobStorageApp/Views/Blob/Index.cshtml]
+[c:/krishna/azure-services/src/BlobStorageApp/Views/Blob/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvYlxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[K:/azure-services/src/BlobStorageApp/Views/Blob/List.cshtml]
+[c:/krishna/azure-services/src/BlobStorageApp/Views/Blob/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvYlxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[K:/azure-services/src/BlobStorageApp/Views/Home/Index.cshtml]
+[c:/krishna/azure-services/src/BlobStorageApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[K:/azure-services/src/BlobStorageApp/Views/Home/Privacy.cshtml]
+[c:/krishna/azure-services/src/BlobStorageApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[K:/azure-services/src/BlobStorageApp/Views/Shared/Error.cshtml]
+[c:/krishna/azure-services/src/BlobStorageApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[K:/azure-services/src/BlobStorageApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/krishna/azure-services/src/BlobStorageApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[K:/azure-services/src/BlobStorageApp/Views/_ViewImports.cshtml]
+[c:/krishna/azure-services/src/BlobStorageApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[K:/azure-services/src/BlobStorageApp/Views/_ViewStart.cshtml]
+[c:/krishna/azure-services/src/BlobStorageApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[K:/azure-services/src/BlobStorageApp/Views/Shared/_Layout.cshtml]
+[c:/krishna/azure-services/src/BlobStorageApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-urkij46isa

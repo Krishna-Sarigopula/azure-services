@@ -26,7 +26,7 @@
           }
         }
       },
-      "Microsoft.Azure.Cosmos/3.30.1": {
+      "Microsoft.Azure.Cosmos/3.31.0": {
         "type": "package",
         "dependencies": {
           "Azure.Core": "1.19.0",
@@ -1878,10 +1878,10 @@
         "pkgicon.png"
       ]
     },
-    "Microsoft.Azure.Cosmos/3.30.1": {
-      "sha512": "8q0qZiji27JMZ8zDbW7ZUPomNnUhRHJr17aZpXhuZYxMGQicRpxPgC6xUduh8c76kkyPrK4LpQ64khUXgjvOAA==",
+    "Microsoft.Azure.Cosmos/3.31.0": {
+      "sha512": "4HQ5RQb5rePm/OGpUOxGWZ0cQbqKWTTGE1cyo+7aQmJkIKVumTpngQ9MNupwCMArsX1abO7Cxw5QOiU8pFYqBQ==",
       "type": "package",
-      "path": "microsoft.azure.cosmos/3.30.1",
+      "path": "microsoft.azure.cosmos/3.31.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1894,7 +1894,7 @@
         "lib/netstandard2.0/Microsoft.Azure.Cosmos.Core.dll",
         "lib/netstandard2.0/Microsoft.Azure.Cosmos.Direct.dll",
         "lib/netstandard2.0/Microsoft.Azure.Cosmos.Serialization.HybridRow.dll",
-        "microsoft.azure.cosmos.3.30.1.nupkg.sha512",
+        "microsoft.azure.cosmos.3.31.0.nupkg.sha512",
         "microsoft.azure.cosmos.nuspec",
         "runtimes/win-x64/native/Cosmos.CRTCompat.dll",
         "runtimes/win-x64/native/Microsoft.Azure.Cosmos.ServiceInterop.dll",
@@ -6230,23 +6230,23 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.Azure.Cosmos >= 3.30.1"
+      "Microsoft.Azure.Cosmos >= 3.31.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kittu\\.nuget\\packages\\": {}
+    "C:\\Users\\krishna.sarigopula\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "K:\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj",
+      "projectUniqueName": "C:\\krishna\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj",
       "projectName": "cosmosdb-sqlapi",
-      "projectPath": "K:\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj",
-      "packagesPath": "C:\\Users\\kittu\\.nuget\\packages\\",
-      "outputPath": "K:\\azure-services\\src\\cosmosdb-sqlapi\\obj\\",
+      "projectPath": "C:\\krishna\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj",
+      "packagesPath": "C:\\Users\\krishna.sarigopula\\.nuget\\packages\\",
+      "outputPath": "C:\\krishna\\azure-services\\src\\cosmosdb-sqlapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kittu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\krishna.sarigopula\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6274,7 +6274,7 @@
         "dependencies": {
           "Microsoft.Azure.Cosmos": {
             "target": "Package",
-            "version": "[3.30.1, )"
+            "version": "[3.31.0, )"
           }
         },
         "imports": [

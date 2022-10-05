@@ -1,20 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W9i5Xn5LHO0Sp70gft556BWTqAIu8Gz5KAE//+qAid9h51Bnr2uS37Q0XVjoABdXvC2gWeYmBwt4e1vxQN3RSA==",
+  "dgSpecHash": "G1IItEKfYK4uRDzt1RV5Th8hWJi9Q3BaZSUKC1xjW75g3fTxhsiMFvW81wHaR9NIo4apN6OKEsT1Q8YeYlO3fw==",
   "success": true,
-  "projectFilePath": "K:\\azure-services\\src\\QueueStorage\\QueueStorage.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\kittu\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
-    "C:\\Users\\kittu\\.nuget\\packages\\azure.storage.common\\12.12.0\\azure.storage.common.12.12.0.nupkg.sha512",
-    "C:\\Users\\kittu\\.nuget\\packages\\azure.storage.queues\\12.11.1\\azure.storage.queues.12.11.1.nupkg.sha512",
-    "C:\\Users\\kittu\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\kittu\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
-    "C:\\Users\\kittu\\.nuget\\packages\\system.io.hashing\\6.0.0\\system.io.hashing.6.0.0.nupkg.sha512",
-    "C:\\Users\\kittu\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
-    "C:\\Users\\kittu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\kittu\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
-    "C:\\Users\\kittu\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\kittu\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\krishna\\azure-services\\src\\QueueStorage\\QueueStorage.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

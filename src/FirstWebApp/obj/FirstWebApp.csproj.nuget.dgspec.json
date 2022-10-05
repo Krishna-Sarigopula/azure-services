@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "K:\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj": {}
+    "C:\\krishna\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj": {}
   },
   "projects": {
-    "K:\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj": {
+    "C:\\krishna\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj",
+        "projectUniqueName": "C:\\krishna\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj",
         "projectName": "FirstWebApp",
-        "projectPath": "K:\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj",
-        "packagesPath": "C:\\Users\\kittu\\.nuget\\packages\\",
-        "outputPath": "K:\\azure-services\\src\\FirstWebApp\\obj\\",
+        "projectPath": "C:\\krishna\\azure-services\\src\\FirstWebApp\\FirstWebApp.csproj",
+        "packagesPath": "C:\\Users\\krishna.sarigopula\\.nuget\\packages\\",
+        "outputPath": "C:\\krishna\\azure-services\\src\\FirstWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kittu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\krishna.sarigopula\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,62 +39,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Azure.Data.AppConfiguration": {
-              "target": "Package",
-              "version": "[1.2.0, )"
-            },
-            "Microsoft.ApplicationInsights.AspNetCore": {
-              "target": "Package",
-              "version": "[2.15.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.9, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.9, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.9, )"
-            },
-            "Microsoft.Extensions.Configuration.AzureAppConfiguration": {
-              "target": "Package",
-              "version": "[5.1.0, )"
-            },
-            "Microsoft.FeatureManagement": {
-              "target": "Package",
-              "version": "[2.5.1, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[6.0.9, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "K:\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj": {}
+    "C:\\krishna\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj": {}
   },
   "projects": {
-    "K:\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj": {
+    "C:\\krishna\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj",
+        "projectUniqueName": "C:\\krishna\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj",
         "projectName": "cosmosdb-sqlapi",
-        "projectPath": "K:\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj",
-        "packagesPath": "C:\\Users\\kittu\\.nuget\\packages\\",
-        "outputPath": "K:\\azure-services\\src\\cosmosdb-sqlapi\\obj\\",
+        "projectPath": "C:\\krishna\\azure-services\\src\\cosmosdb-sqlapi\\cosmosdb-sqlapi.csproj",
+        "packagesPath": "C:\\Users\\krishna.sarigopula\\.nuget\\packages\\",
+        "outputPath": "C:\\krishna\\azure-services\\src\\cosmosdb-sqlapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kittu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\krishna.sarigopula\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,7 +42,7 @@
           "dependencies": {
             "Microsoft.Azure.Cosmos": {
               "target": "Package",
-              "version": "[3.30.1, )"
+              "version": "[3.31.0, )"
             }
           },
           "imports": [

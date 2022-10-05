@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "K:\\azure-services\\src\\BlobStorageApp\\BlobStorageApp.csproj": {}
+    "C:\\krishna\\azure-services\\src\\BlobStorageApp\\BlobStorageApp.csproj": {}
   },
   "projects": {
-    "K:\\azure-services\\src\\BlobStorageApp\\BlobStorageApp.csproj": {
+    "C:\\krishna\\azure-services\\src\\BlobStorageApp\\BlobStorageApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\azure-services\\src\\BlobStorageApp\\BlobStorageApp.csproj",
+        "projectUniqueName": "C:\\krishna\\azure-services\\src\\BlobStorageApp\\BlobStorageApp.csproj",
         "projectName": "BlobStorageApp",
-        "projectPath": "K:\\azure-services\\src\\BlobStorageApp\\BlobStorageApp.csproj",
-        "packagesPath": "C:\\Users\\kittu\\.nuget\\packages\\",
-        "outputPath": "K:\\azure-services\\src\\BlobStorageApp\\obj\\",
+        "projectPath": "C:\\krishna\\azure-services\\src\\BlobStorageApp\\BlobStorageApp.csproj",
+        "packagesPath": "C:\\Users\\krishna.sarigopula\\.nuget\\packages\\",
+        "outputPath": "C:\\krishna\\azure-services\\src\\BlobStorageApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kittu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\krishna.sarigopula\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,44 +39,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Azure.Identity": {
-              "target": "Package",
-              "version": "[1.7.0, )"
-            },
-            "Azure.Security.KeyVault.Keys": {
-              "target": "Package",
-              "version": "[4.4.0, )"
-            },
-            "Azure.Storage.Blobs": {
-              "target": "Package",
-              "version": "[12.13.1, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[6.0.9, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.214\\RuntimeIdentifierGraph.json"
         }
       }
     }
