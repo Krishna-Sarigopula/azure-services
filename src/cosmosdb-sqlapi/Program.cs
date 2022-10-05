@@ -14,6 +14,14 @@ internal class Program
         CreateDatabase();
         CreateContainer();
 
+        Container leaseContaner = cosmosClient.GetContainer(res.Id, "lease");
+
+        ChangeFeedProcessor feed = container.GetChangeFeedProcessorBuilder<Product>
+        ("tracker", onChangesDelegate: TrackChanges).WithInstanceName("apphost")
+        .WithLeaseContainer(leaseContaner).Build();
+
+        feed.StartAsync();
+
         Product newItem = new(
                 id: "687195183911",
                 category: "gear-surf-surfboards",
@@ -22,9 +30,9 @@ internal class Program
                 sale: false
             );
 
-            
+
         var items = new List<Product>(){
-new Product(
+            new Product(
                 id: "1871951839129",
                 category: "gear-surf-surfboards",
                 name: "Yamba Surfboard",
@@ -53,13 +61,13 @@ new Product(
 
         InsertItemsProcedure(items);
 
-       var item123 =  new Product(
-                id: "3871951839121676",
-                category: "gear-surf-surfboards",
-                name: "Yamba Surfboard",
-                quantity: -1,
-                sale: false
-            );
+        var item123 = new Product(
+                 id: "3871951839121676",
+                 category: "gear-surf-surfboards",
+                 name: "Yamba Surfboard",
+                 quantity: -1,
+                 sale: false
+             );
         InsertItemsProcedureFunc(item123);
 
         UpsertItem(newItem);
@@ -69,6 +77,8 @@ new Product(
         GetProductbyQuery();
 
         Console.ReadKey();
+
+        feed.StopAsync();
     }
 
     private static void SetClient()
@@ -109,13 +119,15 @@ new Product(
         Console.WriteLine($"Created item:\t{item.id}\t[{item.category}]");
     }
 
-    private static void InsertItemsProcedure(List<Product> items){
-        var res = container.Scripts.ExecuteStoredProcedureAsync<string>("spInsertProc", new PartitionKey("gear-surf-surfboards"), new [] {items}).Result;
+    private static void InsertItemsProcedure(List<Product> items)
+    {
+        var res = container.Scripts.ExecuteStoredProcedureAsync<string>("spInsertProc", new PartitionKey("gear-surf-surfboards"), new[] { items }).Result;
     }
 
-    private static void InsertItemsProcedureFunc(Product items){
-        var res = container.CreateItemAsync<Product>(items,new PartitionKey("gear-surf-surfboards"),
-        new ItemRequestOptions() {PreTriggers = new List<string>() {"preTrigger"}}).Result;
+    private static void InsertItemsProcedureFunc(Product items)
+    {
+        var res = container.CreateItemAsync<Product>(items, new PartitionKey("gear-surf-surfboards"),
+        new ItemRequestOptions() { PreTriggers = new List<string>() { "preTrigger" } }).Result;
     }
 
     private static void GetProduct(string id)
@@ -150,4 +162,15 @@ new Product(
     int quantity,
     bool sale
 );
+
+  static async Task TrackChanges(ChangeFeedProcessorContext context,
+    IReadOnlyCollection<Product> items,
+    CancellationToken token) 
+    {
+        foreach (var item in items)
+        {
+            System.Console.WriteLine(item.id);
+        }
+    }
+
 }

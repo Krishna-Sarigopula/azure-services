@@ -1,0 +1,89 @@
+
+changefeed - to track insert/modify the item 
+manaul changefeed/ cosmos db function
+
+triggers and stored procedure functions written in javascript
+
+ttl -  time to live - we can define in item level
+Comoposite Index - order by two columns not possible untill we create Comoposite index in cosmos db
+
+ex: storeproc 
+
+function spInsertProcedure(items){
+    var context = getContext();
+    var response=  context.getResponse();
+    
+    if(!items){
+        response.setBody("error");
+        return;
+    }
+    
+    for(let i = 0; i < items.length; i++){
+        createItem(items[i]);
+    }
+    
+    function createItem(item){
+        var collection = context.getCollection();
+        var collectionLink = collection.getSelfLink();
+        collection.createDocument(collectionLink, item);
+    }
+}
+
+ex: trigger
+
+function preTrigger(){
+    var context = getContext();
+    var request = context.getRequest();
+    var item = request.getBody();
+    
+    if(('quantity' in item) && item['quantity'] < 0){
+        item['quantity'] = 0
+    }
+    
+    request.setBody(item);
+}
+
+default index policy:
+{
+    "indexingMode": "consistent",
+    "automatic": true,
+    "includedPaths": [
+        {
+            "path": "/*"
+        }
+    ],
+    "excludedPaths": [
+        {
+            "path": "/\"_etag\"/?"
+        }
+    ]
+}
+
+post adding composite index
+
+{
+     "indexingMode": "consistent",
+    "automatic": true,
+    "includedPaths": [
+        {
+            "path": "/*"
+        }
+    ],
+    "excludedPaths": [
+        {
+            "path": "/\"_etag\"/?"
+        }
+    ],
+ "compositeIndexs": [
+        [
+            {
+                "path": "/cateogry",
+                "order": "ascending"
+            },
+             {
+                "path": "/quantity",
+                "order": "ascending"
+            }
+        ]
+    ]
+}
