@@ -38,6 +38,7 @@ internal class Program
 
     static string connectionString = "Endpoint=sb://myadda.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xMP2V9f375RhYDtWLiO6EfNpMjvbTz+NNt1pj/P88IA=";
     static string queueName = "orders";
+    //static string queueName = "orders/$DeadLetterQueue";  in case receive dead letter queue
     static Order order = new Order();
 
     private static async Task Main(string[] args)
@@ -85,6 +86,7 @@ internal class Program
             var servicebusMsg = new ServiceBusMessage(msg);
             servicebusMsg.ContentType = "application/json"; // can mention other types like text,xml
             servicebusMsg.TimeToLive = TimeSpan.FromSeconds(10); // to set TTL
+            servicebusMsg.MessageId = "1"; // to detect the duplicate detection
             busMessageBatch.TryAddMessage(servicebusMsg);
         }
 
